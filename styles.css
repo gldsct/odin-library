@@ -45,3 +45,109 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* End of CSS Resets */
+
+/* General Layout Styles */
+
+body {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* End of General Layout Styles */
+
+/* Header Styles */
+
+.header-section {
+    background-color: #635C84;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-section > h1 {
+    flex: 0 1 40vw;
+    text-align: center;
+    color: #EAEAEC;
+}
+
+.header-navbar {
+    flex: auto;
+}
+
+.header-navbar > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.4rem;
+}
+
+.header-navbar a {
+    text-decoration: none;
+    color: #EAEAEC;
+}
+
+.hero-image > img {
+    height: 50vh;
+    width: auto;
+    margin: 0 auto;
+}
+
+.hero-quote-container {
+    background-color: #EFD6B5;
+    padding: 0.5rem;
+}
+
+.hero-quote {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.hero-text {
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.hero-author {
+    font-size: 1.4rem;
+    text-align: right;
+    margin-right: 2rem;
+}
+
+/* End of Header Styles */
+
+/* Main Section Styles */
+
+main {
+    padding: 1rem;
+    width: 50%;
+    min-height: 500px;
+    margin: 0 auto;
+    flex: 1 1 auto;
+}
+
+main h2 {
+    font-size: 1.6rem;
+    text-decoration: underline;
+}
+
+/* Book Container/Grid Styles */
+
+.books-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+/* End of Main Section Styles */
+
+/* Footer Styles */
+
+footer {
+    background-color: #635C84;
+    padding: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+/* End of Footer Styles */
