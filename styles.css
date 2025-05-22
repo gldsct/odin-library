@@ -257,6 +257,7 @@ input[type="checkbox"] ~ label .not-read, input[type="checkbox"]:checked ~ label
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
+    padding: 2rem 0;
 }
 
 .new-book-input {
