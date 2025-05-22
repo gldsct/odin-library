@@ -190,6 +190,67 @@ button {
     padding: 0.25rem 0.5rem;
 }
 
+/* Checkbox Styles */
+
+.new-book-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.new-book-checkbox > label {
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+}
+
+.new-book-checkbox > label span {
+    position: absolute;
+}
+
+.new-book-checkbox > input[type="checkbox"] {
+    appearance: none;
+    width: 46px;
+    height: 26px;
+    border-radius: 12px;
+    border: 2px solid #722932;
+    background-color: #5265AC;
+    transition: all 0.4s;
+    position: relative;
+}
+
+.new-book-checkbox > input[type="checkbox"]::before {
+    width: 12px;
+    height: 12px;
+    border-radius: 9px;
+    background-color: #EFD6B5;
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: all 0.4s;
+}
+
+.new-book-checkbox > input[type="checkbox"]:checked {
+    background-color: #658E58;
+    transition: all 0.4s;
+}
+
+.new-book-checkbox > input[type="checkbox"]:checked::before {
+    left: 25px;
+    transition: all 0.4s;
+}
+
+input[type="checkbox"] ~ label .yes-read, input[type="checkbox"]:checked ~ label .not-read {
+    opacity: 0;
+}
+
+input[type="checkbox"] ~ label .not-read, input[type="checkbox"]:checked ~ label .yes-read {
+    opacity: 1;
+}
+
 /* Book Container/Grid Styles */
 
 .books-container {
